@@ -1,0 +1,25 @@
+<h1 class="title">{{ title | titlecase}}</h1>
+<div class="container">
+  <div class="converter">
+      <select [(ngModel)]="currencyName">
+        <option value="" disabled>Choose a currency</option>
+        <option *ngFor="let curr of arrOfCurrencies" [value]="curr">
+          {{ curr }}
+        </option>
+      </select>
+      <input [(ngModel)]="currencyValue" (change)="changeValue(true)">
+  </div>
+  <div class="arrows">
+    <p>🠔</p>
+    <p>🠖</p>
+  </div>
+  <div class="converter">
+    <select [(ngModel)]="currencyName2">
+      <option value="" disabled>Choose a currency</option>
+      <option *ngFor="let curr of arrOfCurrencies" [value]="curr">
+        {{ curr }}
+      </option>
+    </select>
+    <input [(ngModel)]="currencyValue2" (change)="changeValue(false)">
+  </div>
+</div>

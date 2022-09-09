@@ -4,3 +4,13 @@
   box-sizing: border-box;
   font-family: Quicksand, sans-serif;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  height: 110px;
+  background: #7DA3A1;
+
+}
